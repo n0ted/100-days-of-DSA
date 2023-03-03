@@ -121,6 +121,34 @@ Output-=
 
 #  pattern 6
 
+def pypattern(n):
+    num=1
+    for i in range(0,n):
+        num=1
+        for j in range(i,n):
+            print(num,end='')
+            num=num+1
+        print('')
+
+n=5        
+pypattern(n)
+
+Output--
+
+12345
+1234
+123
+12
+1
+
+
+////////////////////////////////////////////////
+
+
+#  pattern 7
+
+
+
 
 
 
