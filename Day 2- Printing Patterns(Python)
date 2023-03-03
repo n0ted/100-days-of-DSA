@@ -93,7 +93,7 @@ Output--
 ////////////////////////////////////////////////
 
 
-#  pattern 6
+#  pattern 5
 
 def pypattern(n):
     for i in range(0,n):
