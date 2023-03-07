@@ -1,0 +1,111 @@
+Problem Statement: Given an integer N , write program to count number of digits in N.
+
+Examples:
+
+Example 1:
+Input: N = 12345
+Output: 5
+Explanation: N has 5 digits
+
+Example 2:
+Input: N = 8394
+Output: 4
+Explanation: N has 4 digits
+-------------------------------------------------------------------------------------
+
+def count(n):
+    count=0
+    while (n>0):
+        n=n//10
+        count+=1
+        
+    print(count)
+n=int(input('ENTER THE NO U WANT TO COUNT: '))
+count(n)
+
+Output:
+ENTER THE NO U WANT TO COUNT: 888349
+6
+
+Time Complexity: O (n) where n is the number of digits in the given integer
+
+Space Complexity: O(1)
+
+*************************************************************************************
+
+Reverse a number in C.
+
+Problem Statement: Given a number N reverse the number and print it.
+
+Examples:
+
+Example 1:
+Input: N = 123
+Output: 321
+Explanation: The reverse of 123 is 321
+
+Example 2:
+Input: N = 234
+Output: 432
+Explanation: The reverse of 234 is 432
+-------------------------------------------------------------------------------------
+
+For anyone wondering what is "[::-1]", it is used to reverse the string.
+string[start: end: step]
+for 64 bit format
+
+def reverse(self, x: int) -> int:
+        rev_dig=0
+        if x<0:
+            sign = -1
+            x=-x
+        else:
+            sign = 1
+
+
+        while (x>0):
+
+            last_dig=x%10
+            rev_dig=(rev_dig*10)+last_dig
+            x=x//10
+        return(rev_dig*sign)
+        
+        
+for 32 bit
+
+
+class Solution:
+    def reverse(self, x: int) -> int:
+        rev_dig=0
+        if x<0:
+            sign = -1
+            x=-x
+        else:
+            sign = 1
+
+
+        while (x>0):
+
+            last_dig=x%10
+            rev_dig=(rev_dig*10)+last_dig
+            x=x//10
+        
+        if rev_dig * sign >= -2147483648 and rev_dig * sign <= 2147483647:
+            return rev_dig * sign
+        else:
+            return 0
+            
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+   
+
+
+
