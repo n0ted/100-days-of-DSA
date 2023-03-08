@@ -95,6 +95,84 @@ class Solution:
         else:
             return 0
             
+**************************************************************************************
+
+Check if a number is Palindrome or Not
+Problem Statement:  Given a number check if it is a palindrome.
+
+An integer is considered a palindrome when it reads the same backward as forward.
+
+Examples:
+
+Example 1:
+Input: N = 123
+Output: Not Palindrome Number
+Explanation: 123 read backwards is 321.Since these are two different numbers 123 is not a palindrome.
+
+Example 2:
+Input: N =  121 
+Output: Palindrome Number
+Explanation: 121 read backwards as 121.Since these are two same numbers 121 is a palindrome.
+
+-------------------------------------------------------------------------------------
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        num=0
+        user_int=x
+        if x<0:
+            return False
+        while (x>0):
+            last_dig=x%10
+            x=x//10
+            num=(num*10)+last_dig #alternate  way =[::-1]
+        return num==user_int
+        
+**************************************************************************************
+
+Problem Statement: Given a number, check if it is Armstrong Number or Not.
+
+Examples:
+
+Example 1:
+Input:153 
+Output: Yes, it is an Armstrong Number
+Explanation: 1^3 + 5^3 + 3^3 = 153
+
+Input:170 
+Output: No, it is not an Armstrong Number
+Explanation: 1^3 + 7^3 + 0^3 != 170
+
+-------------------------------------------------------------------------------------
+
+
+def armstrong(n):
+    summ = 0
+    temp = n
+    count = 0
+    total=len(str(n))
+    while n>0:
+        l_d = n % 10
+        n = n // 10
+        
+        summ = summ+pow(l_d,total)
+    if summ == temp:
+        print("YES")
+        
+    else:
+        print("NO")
+n = int(input('enter the number '))
+armstrong(n)
+
+**************************************************************************************
+
+
+
+
+         
+
+
+
+            
 
     
         
