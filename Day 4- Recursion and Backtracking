@@ -94,7 +94,8 @@ recur(n)
 
 
 5) Sum of first N numbers
-
+(for parameterized way refer to this pseudo code https://youtu.be/69ZCDFy-OUo?list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&t=149)
+(functional way)
 
 def recurSum(n):
     if n <= 1:
@@ -110,8 +111,22 @@ print(recurSum(n))
 3
 6
 
-6) 
+6) Factorial of N numbers
 
+def recurSum(n):
+    if n <= 1:
+        return n
+    return n * recurSum(n - 1)
+n=int(input('enter'))
+print(recurSum(n))
+
+5
+120
+
+3
+6
+
+7) Reverse an array using recursion (https://takeuforward.org/data-structure/reverse-a-given-array/)
 
 
 
