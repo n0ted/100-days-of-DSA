@@ -1,0 +1,103 @@
+1) Understand recursion by print something N times
+
+
+def recur(n):
+    if n<1:
+        return
+    else:
+        print ('gaurav')
+        recur(n-1)
+        
+n=int(input('enter'))
+recur(n)
+
+
+enter
+5
+gaurav
+gaurav
+gaurav
+gaurav
+gaurav
+
+
+** Process exited - Return Code: 0 **
+Press Enter to exit terminal
+
+2) Print name N times using recursion
+
+def recur(n):
+    if n<1:
+        return
+    else:
+        print ('gaurav')
+        recur(n-1)
+        
+n=int(input('enter'))
+recur(n)
+
+
+enter
+5
+gaurav
+gaurav
+gaurav
+gaurav
+gaurav
+
+
+** Process exited - Return Code: 0 **
+Press Enter to exit terminal
+
+
+3) Print 1 to N using recursion (without using incrementing i++ & only backtracking)
+
+def recur(n):
+    if n>0:
+        recur(n-1)
+        print(n)
+        
+        
+    else:
+        return
+n=int(input('enter'))
+recur(n)
+
+1
+2
+3
+4
+5
+
+if we write the recursive call before the print statement this will make sure that using backtrack only the last func call gets printed first or inverse of quesion 4>>
+
+
+4) Print N to 1 using recursion
+
+def recur(n):
+    if n>0:
+        
+        print(n)
+        recur(n-1)
+        
+        
+    else:
+        return
+n=int(input('enter'))
+recur(n)
+
+5
+4
+3
+2
+1
+
+
+5) Sum of first N numbers
+
+
+
+
+
+
+
