@@ -96,6 +96,22 @@ recur(n)
 5) Sum of first N numbers
 
 
+def recurSum(n):
+    if n <= 1:
+        return n
+    return n + recurSum(n - 1)
+n=int(input('enter'))
+print(recurSum(n))
+
+
+5 
+15
+
+3
+6
+
+6) 
+
 
 
 
