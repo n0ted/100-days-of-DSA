@@ -126,8 +126,30 @@ print(recurSum(n))
 3
 6
 
-7) Reverse an array using recursion (https://takeuforward.org/data-structure/reverse-a-given-array/)
+7) Reverse an array using recursion (https://takeuforward.org/data-structure/reverse-a-given-array/) imp
 
+def printarray(arr,n):
+    for i in range(n):
+        print(arr[i], end=" ")
+    print()
+    
+def reverse(arr,n):
+    l=0
+    r=n-1
+    while l<=r:
+        arr[l],arr[r] = arr[r],arr[l]
+        l+=1 
+        r-=1 
+    printarray(arr,n)
+if __name__ == "__main__":
+    arr = [5, 4, 3, 2, 1]
+    n=len(arr)
+    reverse(arr,n)
+
+
+1 2 3 4 5 
+
+8) 
 
 
 
