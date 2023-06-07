@@ -1,0 +1,47 @@
+Selection Sort 
+select the minimum from the array and then swap it with the initial position then reduce the array to i+1
+
+def sort(nums):
+    size = len(nums)
+    for i in range(size-1):
+        mini = i
+        for j in range(i,size):
+            if nums[j]<nums[mini]:
+                mini = j
+        
+        temp = nums[i]
+        nums[i]=nums[mini]
+        nums[mini] = temp
+    
+nums = [7,9,8,4,1,3]
+sort(nums)
+print(nums)
+
+
+
+Bubble Sort
+Opposite to Selection Sort pushes the maximum to the end by adjacent swaping
+
+def sort(nums):
+    size = len(nums)
+    for i in range(size-1,0,-1):
+        for j in range(i):
+            if nums[j]>nums[j+1]:
+        
+                temp = nums[j]
+                nums[j]=nums[j+1]
+                nums[j+1] = temp
+            
+            
+
+    
+nums = [7,9,8,4,1,3]
+sort(nums)
+print(nums)
+
+
+Insertion Sort
+Takes an element and places it in its correct position
+
+
+
