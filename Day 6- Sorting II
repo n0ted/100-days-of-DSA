@@ -1,1 +1,4 @@
-Merge Sort Better than Sort I because it take O(N^2) 
+Merge Sort Better than Sort I because it take O(N log n) 
+It is better than insertion sort bubble sort or selection sort
+It is a Recursive sorting algorithm 
+It follows a divide and merge 
