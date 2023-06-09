@@ -1,3 +1,6 @@
+All the below algos take O(N^2)
+
+
 Selection Sort 
 select the minimum from the array and then swap it with the initial position then reduce the array to i+1
 
