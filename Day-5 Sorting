@@ -17,7 +17,23 @@ nums = [7,9,8,4,1,3]
 sort(nums)
 print(nums)
 
+def selectionSort(arr):
+    size = len(arr)
+    for i in range(size-1):
+        mini = i
+        for j in range(i,size):
+            if arr[mini] > arr[j]:
+                arr[mini],arr[j] = arr[j],arr[mini]
 
+
+
+
+
+arr = [4,2,5,6,12,7]
+selectionSort(arr)
+print(arr)
+
+________________________________________________________________________________________________________________
 
 Bubble Sort
 Opposite to Selection Sort pushes the maximum to the end by adjacent swaping
